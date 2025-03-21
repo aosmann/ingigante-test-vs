@@ -23,7 +23,7 @@ const About = () => {
             We are a trusted real estate team dedicated to helping buyers, sellers, and investors
             succeed in today’s competitive housing market. Our experienced real estate agents,
             brokers, property managers, and consultants collaborate to deliver expert guidance,
-            custom solutions, and reliable service tailored to your unique goals.
+            custom solutions, and reliable service tailored to your unique goals..
           </p>
           <p className="text-lg leading-relaxed text-gray-700 mt-4">
             Whether you’re looking to purchase your dream home, sell your property, or manage real estate investments, we’re here to make the process smooth, efficient, and rewarding.
