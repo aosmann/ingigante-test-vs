@@ -118,7 +118,7 @@ const Offers = ({ properties }: any) => {
                   )}
                 </div>
 
-                <div className="flex flex-col justify-between p-4 space-y-2 max-h-[11rem] h-full">
+                <div className="flex flex-col justify-between p-4 space-y-2">
                   <div>
                     <h2 className="text-lg font-bold text-gray-900 line-clamp-2 leading-snug">{property.title}</h2>
                     <p className="text-sm text-gray-600 line-clamp-1 min-h-[1.25rem]">

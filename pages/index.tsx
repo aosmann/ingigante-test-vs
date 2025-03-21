@@ -112,29 +112,6 @@ function Home({
         <Faq faqs={faq} />
         <Reference references={references} />
       </main>
-
-      {/*
-      <main className="relative flex w-full flex-1 flex-col">
-        <div className="relative z-50">
-          <Hero propertyType={propertyType} locations={locations} />
-        </div>
-        <div className="relative z-10">
-          <Offers properties={properties} />
-        </div>
-        <div className="relative z-10">
-          <About />
-        </div>
-        <div className="relative z-10">
-          <OurTeam teamMembers={ourteam} />
-        </div>
-        <div className="relative z-10">
-          <Faq faqs={faq} />
-        </div>
-        <div className="relative z-10">
-          <Reference references={references} />
-        </div>
-      </main>
-*/}
     </div>
   );
 }
