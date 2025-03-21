@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (min-width: 640px) { 
+  .m--1{
+  margin-top: -4rem !important;
+} 
+}
+
+body{
+  background-color: #f9fafb;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.m--1{
+  margin-top: 0rem;
+}
+
+.slick-list {
+  margin: 0 -5px;
+  padding: 0px !important;
+}
+.slick-slide > div {
+  padding: 0 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+  color: #1c3e33!important
+}
+
+.text-secondary-light{
+  color: #F4EDD3;
+}
+/* Custom slider */
+.slider-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.slick-slide>div {
+  padding: 0px !important;
+}
+
+.slick-slide>div>a {
+  width: 95% !important;
+}
+
+.custom-width {
+max-width: 95% !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .slider-wrapper {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .slider-wrapper {
+    width: 768px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider-wrapper {
+    width: 350px;
+    padding: 0 5px;
+  }
+}
+
+.slick-track{
+  max-height: 6rem !important;
+}
+
+.slick-slide {
+  text-align: center;
+  position: relative;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-slide-title {
+  text-transform: capitalize;
+}
+.slick-slide-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px;
+  
+}
+.slick-slide-label {
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  left: 0px;
+  font-size: 1.5em;
+  bottom: 0px;
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #777777;
+}
+.thumbnail-slider-wrap {
+  margin-top: 15px!important;
+  height: 85px!important;
+}
+.thumbnail-slider-wrap .slick-track .slick-slide {
+  text-align: center!important;
+}
+.thumbnail-slider-wrap .slick-track .slick-slide img {
+  width: 85%!important;
+}
+
+
+.slick-prev {
+  left: 25px !important; /* Adjust left position */
+}
+.slick-next {
+  right: 25px !important; /* Adjust left position */
+}
+
+.slick-next,
+.slick-prev{
+  z-index: 10 !important;
+  color: ##ffffff6e!important;
+  width: 50px !important;
+  Height: 50px !important;
+}
+.next-slick-arrow,
+.prev-slick-arrow {
+  color: ##ffffff6e!important;
+}
+
+.next-slick-arrow{
+right: -10px; /* Adjust left position */
+}
+.prev-slick-arrow{
+left: -10px; /* Adjust left position */
+}
+
+
+/* Animation classes for the main image */
+.slide-left {
+  animation: slideLeft 0.5s ease-in-out;
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease-in-out;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Existing styles */
+.slider-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.slider-wrapper img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-wrapper button:focus {
+  outline: none;
+}
+
+/* Add smooth scrolling for thumbnails */
+.slider-wrapper .overflow-x-auto {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Add to your existing styles */
+.fixed.inset-0 {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* For better thumbnail scrolling in fullscreen mode */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+@layer {
+  h1,
+  h2,
+  h3,
+  h4 {
+    /* font-family: var(--merri-font); */
+    font-family: var(--seravek-web);
+  }
+  p{
+    font-family: var(--seravek-web);
+    letter-spacing: 0.025rem;
+  }
+}
